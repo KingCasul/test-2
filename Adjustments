@@ -1,0 +1,66 @@
+import javax.swing.JFrame;
+import java.awt.Graphics;
+import javax.swing.JPanel;
+import java.awt.Font;
+import java.awt.Color;
+import javax.swing.ImageIcon;
+
+public class Masterpiece extends JPanel
+{
+   public void paintComponent(Graphics g)
+   {
+   
+      Color lightblue  = new Color(81,190,202);
+      g.setColor(lightblue);
+   
+      g.fillRect(0,0,3000,3000);
+   
+      g.setColor(Color.YELLOW);
+      g.fillOval(146,101,175,175);  
+      
+      Color tan = new Color(215,175,123);//people
+      g.setColor(tan);
+      
+      g.fillRect(360,410,40,80);
+      g.fillRect(865,400,40,80);
+      g.drawLine(865,430,825,440);
+      g.drawLine(905,430,920,460);
+      g.drawLine(920,460,940,445);
+      g.fillOval(342,712,78,78);
+      
+      g.fillOval(845,712,78,78);
+      
+      
+      
+    
+      g.setColor(Color.BLACK);
+      g.drawLine(150,162,319,162);//first 2 determine where first coordinate goes, second 2 determine where 2 point goes
+      
+      g.drawLine(186,134,210,134);
+      
+      g.drawLine(250,134,274,134);
+      
+      g.fillArc(207,185,50,50,0,-186);
+       
+      Color darkgray = new Color(142,150,153);
+      g.setColor(darkgray);
+   
+      g.fillRect(670,790,600,600);
+   
+    
+      g.fillOval(175,143,46 ,46);
+      g.fillOval(235,143,46,46);
+   
+      int  xCor[] = {380,380}; 
+      int  yCor[] = {790,800};
+      g.drawPolygon(xCor,yCor,2);
+      
+      
+      
+   
+   }
+
+}
+
+
+
